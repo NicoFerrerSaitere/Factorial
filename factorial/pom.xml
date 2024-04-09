@@ -15,16 +15,75 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<junit-jupiter.version>5.1.0</junit-jupiter.version>
+		<!-- optional : if we want to use a junit4 specific version -->
+		<!--		<junit.version>4.12</junit.version>-->
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.0.0-M5</version>
-			<scope>test</scope>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.junit.jupiter</groupId>-->
+<!--			<artifactId>junit-jupiter-engine</artifactId>-->
+<!--			<version>5.9.1</version>-->
+<!--			<scope>test</scope>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.junit.vintage</groupId>-->
+<!--			<artifactId>junit-vintage-engine</artifactId>-->
+<!--			<version>5.9.1</version>-->
+<!--			<scope>test</scope>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.junit.vintage</groupId>-->
+<!--			<artifactId>junit-vintage-engine</artifactId>-->
+<!--			<version>5.1.0</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>junit</groupId>-->
+<!--			<artifactId>junit</artifactId>-->
+<!--			<version>4.13.2</version>-->
+<!--			<scope>test</scope>-->
+<!--		</dependency>-->
 	</dependencies>
+
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.2.5</version>
+        </plugin>
+    </plugins>
+</build>
+	<!--	<build>-->
+	<!--        <plugins>-->
+	<!--            <plugin>-->
+	<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+	<!--                <version>2.19.1</version>  matters until now-->
+	<!--                <dependencies>-->
+	<!--                     to let surefire to run JUnit 4 but also JUnit 5 tests -->
+	<!--                    <dependency>-->
+	<!--                        <groupId>org.junit.platform</groupId>-->
+	<!--                        <artifactId>junit-platform-surefire-provider</artifactId>-->
+	<!--                        <version>4.13.2</version>-->
+	<!--                    </dependency>-->
+	<!--                     JUnit vintage engine to run JUnit 3 or JUnit 4 tests -->
+	<!--                    <dependency>-->
+	<!--                        <groupId>org.junit.vintage</groupId>-->
+	<!--                        <artifactId>junit-vintage-engine</artifactId>-->
+	<!--                        <version>5.1.0</version>-->
+	<!--                    </dependency>-->
+	<!--                     JUnit 5 engine to run JUnit 5 tests -->
+	<!--                    <dependency>-->
+	<!--                        <groupId>org.junit.jupiter</groupId>-->
+	<!--                        <artifactId>junit-jupiter-engine</artifactId>-->
+	<!--                        <version>5.1.0</version>-->
+	<!--                    </dependency>-->
+	<!--                </dependencies>-->
+	<!--            </plugin>-->
+	<!--        </plugins>-->
+	<!--    </build>-->
 
 	<!--	<build>-->
 	<!--		<sourceDirectory>src/main/java</sourceDirectory>-->
