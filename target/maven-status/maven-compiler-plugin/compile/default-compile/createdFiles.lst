@@ -1,4 +1,4 @@
-com\viewnext\calculadora\App.class
-com\viewnext\exception\CalculadoraFactorialException.class
-com\viewnext\calculadora\Calculadora.class
-com\viewnext\calculadora\Validaciones.class
+calculadora\Validaciones.class
+calculadora\Main.class
+exception\CalculadoraFactorialException.class
+calculadora\Calculadora.class
