@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Calculadora.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">factorial</a> &gt; <a href="index.source.html" class="el_package">calculadora</a> &gt; <span class="el_source">Calculadora.java</span></div><h1>Calculadora.java</h1><pre class="source lang-java linenums">package calculadora;
+
+import exception.CalculadoraFactorialException;
+
+@SuppressWarnings(&quot;java:S1118&quot;)
+<span class="fc" id="L6">public class Calculadora {</span>
+	
+	/**
+	 * Método que devuelve el factorial de un número dado
+	 *
+	 * @param num El parámetro num define los números que se multiplican para
+	 *            desarrollar la operacion de realizar el factorial de un número
+	 * @return El factorial del número ingresado
+	 * @throws CalculadoraFactorialException Se produce cuando el numero que se
+	 *                                       quiere factorizar no es mayor o igual
+	 *                                       que 0
+	 */
+	
+	
+	public static long factorial(final int num) throws CalculadoraFactorialException {
+<span class="fc" id="L21">		long nfactorial = 1; // Inicializamos el parámetro nfactorial que define el número que se quiere</span>
+								// factorizar
+<span class="fc" id="L23">		Validaciones.validadorFactorial(num); // Llamamos al método validadorFactorial de la clase Validadciones</span>
+<span class="fc bfc" id="L24" title="All 4 branches covered.">		if (num == 0 || num == 1) { // Especificamos los que tiene que hacer el método en caso de ser 0 o 1</span>
+<span class="fc" id="L25">			nfactorial = 1;</span>
+		} else // Especificamos lo que hace el método en caso de que el número sea ma
+		{
+<span class="fc bfc" id="L28" title="All 2 branches covered.">			for (int i = num; i &gt; 0; i--) // Ejecutamos un bucle, que se ejecutará siempre y cuando el parametro i sea</span>
+											// mayor que 0
+			{
+<span class="fc" id="L31">				nfactorial = nfactorial * i; // Operación para hallar el factorial</span>
+			}
+		}
+<span class="fc" id="L34">		return nfactorial; // Devuelve el resultado de la operación</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

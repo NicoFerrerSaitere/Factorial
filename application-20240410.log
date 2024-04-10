@@ -1,0 +1,17 @@
+2024-04-10 10:08:52.469 [main] INFO  calculadora.Main - El factorial de 9 es: 362880
+2024-04-10 10:54:37.517 [main] INFO  calculadora.Main - El factorial de {}9 es: {}362880
+2024-04-10 10:56:06.762 [main] INFO  calculadora.Main - El factorial de {}9 es: {}362880
+2024-04-10 10:57:31.540 [main] INFO  calculadora.Main - No se puede hallar el factorial de un número negativo
+2024-04-10 10:57:43.158 [main] INFO  calculadora.Main - No se puede hallar el factorial de un número negativo
+2024-04-10 11:01:51.648 [main] INFO  calculadora.Main - El factorial de {}5 es: {}120
+2024-04-10 11:07:47.102 [main] INFO  calculadora.Main - El factorial de {}5 es: {}120
+2024-04-10 12:06:28.264 [main] INFO  calculadora.Main - El factorial de {}5 es: {}120
+2024-04-10 12:06:59.107 [main] INFO  calculadora.Main - No se puede hallar el factorial de un número negativo
+2024-04-10 12:33:37.588 [main] INFO  calculadora.Main - El factorial de d% es:d%
+2024-04-10 12:37:47.378 [main] INFO  calculadora.Main - El factorial de 1. es:1.
+2024-04-10 12:37:58.770 [main] INFO  calculadora.Main - El factorial de 1 es:1
+2024-04-10 12:38:05.218 [main] INFO  calculadora.Main - El factorial de 1 es: 1
+2024-04-10 12:38:18.703 [main] INFO  calculadora.Main - El factorial de 1 es: 1
+2024-04-10 12:38:25.577 [main] INFO  calculadora.Main - El factorial de 4 es: 24
+2024-04-10 12:38:35.530 [main] INFO  calculadora.Main - El factorial de 5 es: 120
+2024-04-10 12:39:06.516 [main] INFO  calculadora.Main - El factorial de 5 es: 120
