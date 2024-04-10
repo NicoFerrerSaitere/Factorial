@@ -2,8 +2,9 @@ package calculadora;
 
 import exception.CalculadoraFactorialException;
 
+@SuppressWarnings("java:S1118")
 public class Calculadora {
-
+	
 	/**
 	 * Método que devuelve el factorial de un número dado
 	 *
@@ -14,6 +15,8 @@ public class Calculadora {
 	 *                                       quiere factorizar no es mayor o igual
 	 *                                       que 0
 	 */
+	
+	
 	public static long factorial(final int num) throws CalculadoraFactorialException {
 		long nfactorial = 1; // Inicializamos el parámetro nfactorial que define el número que se quiere
 								// factorizar

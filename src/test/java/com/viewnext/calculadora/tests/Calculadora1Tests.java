@@ -6,31 +6,47 @@ import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
 import calculadora.Calculadora;
+import calculadora.Main;
+import calculadora.Validaciones;
 import exception.CalculadoraFactorialException;
 public class Calculadora1Tests {
+	
+	@Test
+    public void testmain() {
+        final Main main = new Main();
+        Assertions.assertNotNull(main);
+    }
+	
+	@Test
+    public void testcalculadora() {
+        final Calculadora calculadoraApi = new Calculadora();
+        Assertions.assertNotNull(calculadoraApi);
+    }
+	@Test
+    public void testvalidaciones() {
+        final Validaciones validacion = new Validaciones();
+        Assertions.assertNotNull(validacion);
+    }
+	
 	@Test
 	public void factorial0() throws Exception {
-		Calculadora apiCalculadora = new Calculadora();
 		long nfactorial = Calculadora.factorial(0);
 		Assertions.assertEquals(1, nfactorial);
 	}
 	@Test
 	public void factorial1() throws Exception {
-		Calculadora apiCalculadora = new Calculadora();
 		long nfactorial = Calculadora.factorial(1);
 		Assertions.assertEquals(1, nfactorial);
 	}
 	@Test
 	public void factorialmas() throws Exception {
-		Calculadora apiCalculadora = new Calculadora();
 		long nfactorial = Calculadora.factorial(5);
 		Assertions.assertEquals(120, nfactorial);
 	}
 	@Test
 	public void factorialmenos() throws Exception {
 		
-		Calculadora apiCalculadora = new Calculadora();
-		Exception exception = assertThrows(CalculadoraFactorialException.class, () ->
+		assertThrows(CalculadoraFactorialException.class, () ->
 		Calculadora.factorial(-1)
 		);
         
