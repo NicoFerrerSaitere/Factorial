@@ -3,18 +3,19 @@
 import exception.CalculadoraFactorialException;
 
 
-@SuppressWarnings(&quot;java:S1118&quot;)
+
 <span class="fc" id="L7">public class Validaciones {</span>
+	
 
 public static void validadorFactorial(int num) throws CalculadoraFactorialException {
 		
 		
-<span class="fc" id="L12">		int minvalorfactorial = 0;</span>
+<span class="fc" id="L13">		int minvalorfactorial = 0;</span>
 		
-<span class="fc bfc" id="L14" title="All 2 branches covered.">		if (num &lt; minvalorfactorial) { // Especificamos lo que tiene que hacer el método si el número es menor que 0</span>
-<span class="fc" id="L15">			throw new CalculadoraFactorialException(&quot;&quot;); // Le decimos al método que si se da la condición anterior, debe</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">		if (num &lt; minvalorfactorial) { // Especificamos lo que tiene que hacer el método si el número es menor que 0</span>
+<span class="fc" id="L16">			throw new CalculadoraFactorialException(&quot;&quot;); // Le decimos al método que si se da la condición anterior, debe</span>
 														// lanzar una excepción
 		}
-<span class="fc" id="L18">	}</span>
+<span class="fc" id="L19">	}</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

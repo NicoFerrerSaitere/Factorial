@@ -3,8 +3,9 @@ package calculadora;
 import exception.CalculadoraFactorialException;
 
 
-@SuppressWarnings("java:S1118")
+
 public class Validaciones {
+	
 
 public static void validadorFactorial(int num) throws CalculadoraFactorialException {
 		
