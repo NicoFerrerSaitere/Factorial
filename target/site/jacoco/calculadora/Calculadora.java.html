@@ -2,9 +2,10 @@
 
 import exception.CalculadoraFactorialException;
 
-@SuppressWarnings(&quot;java:S1118&quot;)
+
 <span class="fc" id="L6">public class Calculadora {</span>
 	
+
 	/**
 	 * Método que devuelve el factorial de un número dado
 	 *
@@ -18,20 +19,20 @@ import exception.CalculadoraFactorialException;
 	
 	
 	public static long factorial(final int num) throws CalculadoraFactorialException {
-<span class="fc" id="L21">		long nfactorial = 1; // Inicializamos el parámetro nfactorial que define el número que se quiere</span>
+<span class="fc" id="L22">		long nfactorial = 1; // Inicializamos el parámetro nfactorial que define el número que se quiere</span>
 								// factorizar
-<span class="fc" id="L23">		Validaciones.validadorFactorial(num); // Llamamos al método validadorFactorial de la clase Validadciones</span>
-<span class="fc bfc" id="L24" title="All 4 branches covered.">		if (num == 0 || num == 1) { // Especificamos los que tiene que hacer el método en caso de ser 0 o 1</span>
-<span class="fc" id="L25">			nfactorial = 1;</span>
+<span class="fc" id="L24">		Validaciones.validadorFactorial(num); // Llamamos al método validadorFactorial de la clase Validadciones</span>
+<span class="fc bfc" id="L25" title="All 4 branches covered.">		if (num == 0 || num == 1) { // Especificamos los que tiene que hacer el método en caso de ser 0 o 1</span>
+<span class="fc" id="L26">			nfactorial = 1;</span>
 		} else // Especificamos lo que hace el método en caso de que el número sea ma
 		{
-<span class="fc bfc" id="L28" title="All 2 branches covered.">			for (int i = num; i &gt; 0; i--) // Ejecutamos un bucle, que se ejecutará siempre y cuando el parametro i sea</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">			for (int i = num; i &gt; 0; i--) // Ejecutamos un bucle, que se ejecutará siempre y cuando el parametro i sea</span>
 											// mayor que 0
 			{
-<span class="fc" id="L31">				nfactorial = nfactorial * i; // Operación para hallar el factorial</span>
+<span class="fc" id="L32">				nfactorial = nfactorial * i; // Operación para hallar el factorial</span>
 			}
 		}
-<span class="fc" id="L34">		return nfactorial; // Devuelve el resultado de la operación</span>
+<span class="fc" id="L35">		return nfactorial; // Devuelve el resultado de la operación</span>
 	}
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

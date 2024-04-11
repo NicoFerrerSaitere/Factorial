@@ -2,9 +2,10 @@ package calculadora;
 
 import exception.CalculadoraFactorialException;
 
-@SuppressWarnings("java:S1118")
+
 public class Calculadora {
 	
+
 	/**
 	 * Método que devuelve el factorial de un número dado
 	 *

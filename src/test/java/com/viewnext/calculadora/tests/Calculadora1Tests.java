@@ -4,6 +4,8 @@ import static org.junit.Assert.assertThrows;
 
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import calculadora.Calculadora;
 import calculadora.Main;
@@ -14,6 +16,7 @@ public class Calculadora1Tests {
 	@Test
     public void testmain() {
         final Main main = new Main();
+        main.main(null);
         Assertions.assertNotNull(main);
     }
 	
@@ -27,6 +30,8 @@ public class Calculadora1Tests {
         final Validaciones validacion = new Validaciones();
         Assertions.assertNotNull(validacion);
     }
+	
+	
 	
 	@Test
 	public void factorial0() throws Exception {
